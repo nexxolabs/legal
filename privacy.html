@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Informativa sulla Privacy — FlipMetrics</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1f2b;
+    --muted: #5b6474;
+    --border: #e4e7ec;
+    --primary: #16a34a;
+    --surface: #f7f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0e14;
+      --text: #f4f6fa;
+      --muted: #9aa3b5;
+      --border: #262d3d;
+      --primary: #22c55e;
+      --surface: #151a24;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 16px 80px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { padding: 40px 0 24px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
+  h1 { font-size: 1.6rem; margin: 0 0 8px; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  h2 { font-size: 1.15rem; margin-top: 40px; margin-bottom: 12px; }
+  h3 { font-size: 1rem; margin-top: 24px; margin-bottom: 8px; }
+  p, li { color: var(--text); font-size: 0.97rem; }
+  .muted { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 10px 12px; border: 1px solid var(--border); vertical-align: top; }
+  th { background: var(--surface); font-weight: 600; }
+  .box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 16px 0;
+  }
+  a { color: var(--primary); }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Informativa sulla Privacy di FlipMetrics</h1>
+    <p class="meta">Ultimo aggiornamento: 4 ottobre 2026</p>
+  </header>
+
+  <p>
+    Questa informativa descrive come <strong>FlipMetrics</strong> ("l'App", "noi") raccoglie, utilizza e
+    protegge i dati personali degli utenti, in conformità al Regolamento (UE) 2016/679 ("GDPR") e alla
+    normativa italiana applicabile.
+  </p>
+
+  <div class="box">
+    <strong>Titolare del trattamento:</strong><br />
+    Esposito Massimo (persona fisica), Via Colombare 110, 25019 Sirmione (BS), Italia<br />
+    Email di contatto: <a href="mailto:johnbwhite@protonmail.com">johnbwhite@protonmail.com</a>
+  </div>
+
+  <h2>1. Quali dati raccogliamo</h2>
+  <table>
+    <tr><th>Categoria</th><th>Dati</th><th>Finalità</th></tr>
+    <tr>
+      <td>Account</td>
+      <td>Indirizzo email, password (salvata in forma crittografata, non accessibile a noi)</td>
+      <td>Autenticazione e accesso all'App</td>
+    </tr>
+    <tr>
+      <td>Dati di inventario e vendite</td>
+      <td>Titolo, categoria, prezzo e data di acquisto, canali di vendita, foto dell'articolo, dati di vendita (piattaforma, prezzo, commissioni, spedizione, profitto netto)</td>
+      <td>Funzionalità principale dell'App: tracciare acquisti e vendite e calcolare il profitto netto</td>
+    </tr>
+    <tr>
+      <td>Foto prodotto (facoltativo, solo se usi le funzioni AI)</td>
+      <td>La foto che selezioni per "Compila con AI" o "BUY Score da foto"</td>
+      <td>Generare titolo/categoria/prezzo stimato o la valutazione BUY Score tramite intelligenza artificiale</td>
+    </tr>
+    <tr>
+      <td>Dati di abbonamento</td>
+      <td>Stato dell'abbonamento (gratuito/PRO), identificativi di acquisto gestiti dallo store</td>
+      <td>Gestione dell'abbonamento PRO e sblocco delle funzionalità a pagamento</td>
+    </tr>
+    <tr>
+      <td>Preferenze app</td>
+      <td>Valuta selezionata, lingua</td>
+      <td>Personalizzazione dell'esperienza d'uso</td>
+    </tr>
+  </table>
+
+  <p>Non raccogliamo dati di geolocalizzazione, contatti del telefono, né accediamo ad altre app o account (es. Vinted, Subito) installati sul tuo dispositivo.</p>
+
+  <h2>2. Con chi condividiamo i dati</h2>
+  <p>Per far funzionare l'App ci appoggiamo ad alcuni fornitori terzi, che trattano i dati per nostro conto in qualità di responsabili del trattamento:</p>
+  <table>
+    <tr><th>Fornitore</th><th>Funzione</th><th>Dati trattati</th><th>Sede</th></tr>
+    <tr>
+      <td>Supabase</td>
+      <td>Database, autenticazione, archiviazione foto</td>
+      <td>Tutti i dati dell'account e dell'inventario</td>
+      <td>Unione Europea (Parigi, Francia)</td>
+    </tr>
+    <tr>
+      <td>RevenueCat</td>
+      <td>Gestione abbonamenti e acquisti in-app</td>
+      <td>Stato abbonamento, identificativi di acquisto</td>
+      <td>Stati Uniti</td>
+    </tr>
+    <tr>
+      <td>Google Play Billing</td>
+      <td>Elaborazione dei pagamenti dell'abbonamento</td>
+      <td>Dati di pagamento (gestiti interamente da Google, non li vediamo né li conserviamo)</td>
+      <td>Stati Uniti / globale</td>
+    </tr>
+    <tr>
+      <td>Anthropic (API Claude)</td>
+      <td>Analisi AI delle foto prodotto (solo se usi "Compila con AI" o "BUY Score")</td>
+      <td>La foto inviata e un prompt testuale, elaborati per generare la risposta e non utilizzati da Anthropic per addestrare i propri modelli secondo le sue condizioni commerciali</td>
+      <td>Stati Uniti</td>
+    </tr>
+  </table>
+  <p class="muted">
+    I trasferimenti di dati verso fornitori extra-UE (RevenueCat, Google, Anthropic) avvengono sulla base delle
+    Clausole Contrattuali Standard approvate dalla Commissione Europea o di altre garanzie equivalenti previste
+    dal GDPR. Non vendiamo né cediamo i tuoi dati a terzi per finalità di marketing.
+  </p>
+
+  <h2>3. Base giuridica del trattamento</h2>
+  <ul>
+    <li><strong>Esecuzione del contratto</strong>: per fornirti le funzionalità dell'App e l'abbonamento PRO</li>
+    <li><strong>Consenso</strong>: per le funzionalità AI facoltative (invio foto ad Anthropic), attivate solo quando le usi attivamente</li>
+    <li><strong>Legittimo interesse</strong>: per la sicurezza del servizio e la prevenzione di abusi</li>
+  </ul>
+
+  <h2>4. Per quanto tempo conserviamo i dati</h2>
+  <p>
+    Conserviamo i tuoi dati finché il tuo account resta attivo. Se elimini l'account dalla sezione
+    Impostazioni → Zona pericolosa, i tuoi dati (articoli, vendite, foto) vengono cancellati in modo permanente
+    ed entro pochi istanti dai nostri sistemi. L'eliminazione dell'account non annulla automaticamente un
+    eventuale abbonamento attivo su Google Play: va cancellato separatamente dallo store.
+  </p>
+
+  <h2>5. I tuoi diritti</h2>
+  <p>In quanto interessato puoi, in qualsiasi momento:</p>
+  <ul>
+    <li>Accedere ai tuoi dati ed esportare le tue vendite in formato CSV dalla sezione Impostazioni (diritto di portabilità)</li>
+    <li>Correggere i tuoi dati direttamente nell'App</li>
+    <li>Eliminare definitivamente il tuo account e tutti i dati associati (Impostazioni → Elimina account)</li>
+    <li>Opporti o revocare il consenso all'uso delle funzionalità AI, semplicemente non utilizzandole</li>
+    <li>Contattarci all'indirizzo sopra indicato per qualsiasi richiesta relativa ai tuoi dati</li>
+    <li>Proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>) o all'autorità di controllo del tuo Paese di residenza</li>
+  </ul>
+
+  <h2>6. Sicurezza</h2>
+  <p>
+    I dati sono trasmessi tramite connessioni cifrate (TLS) e protetti da Row Level Security sul database:
+    ogni utente può accedere solo ai propri dati. Le password non sono mai visibili a noi, nemmeno in forma
+    cifrata leggibile.
+  </p>
+
+  <h2>7. Minori</h2>
+  <p>FlipMetrics non è destinata a minori di 16 anni e non raccogliamo consapevolmente dati di minori.</p>
+
+  <h2>8. Modifiche a questa informativa</h2>
+  <p>
+    Possiamo aggiornare periodicamente questa informativa. In caso di modifiche sostanziali te ne daremo
+    comunicazione tramite l'App o via email. La data di ultimo aggiornamento è indicata in cima alla pagina.
+  </p>
+
+  <footer>
+    FlipMetrics — Esposito Massimo, Via Colombare 110, 25019 Sirmione (BS)<br />
+    Per qualsiasi domanda su questa informativa: <a href="mailto:johnbwhite@protonmail.com">johnbwhite@protonmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
